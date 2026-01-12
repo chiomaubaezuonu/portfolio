@@ -1,0 +1,19 @@
+<svg width="220" height="120" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .letter {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 90px;
+      font-weight: 700;
+      font-style: italic;
+    }
+  </style>
+
+  <!-- C -->
+  <text x="20" y="90" class="letter" fill="black">C</text>
+
+  <!-- Dot overlapping C -->
+  <circle cx="92" cy="70" r="6" fill="black"></circle>
+
+  <!-- U overlapping dot -->
+  <text x="96" y="90" class="letter" fill="#f28c28">U</text>
+</svg>

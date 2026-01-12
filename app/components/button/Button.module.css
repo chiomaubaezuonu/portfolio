@@ -1,0 +1,29 @@
+.primary_btn {
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.25rem 0.8rem; 
+  cursor: pointer;
+  border: 0.1rem solid black;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.about_btn {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border: 0.1rem solid black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.7rem;
+  border-radius: 2rem;
+  transition: 0.3s ease-in-out;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+

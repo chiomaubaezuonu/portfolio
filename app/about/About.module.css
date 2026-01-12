@@ -1,0 +1,28 @@
+.about_container {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding: 0 6rem;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  font-size: 1.3rem;
+}
+.title {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.button_link {
+  text-decoration: none;
+  color: inherit;
+}
+.potrait {
+  width: 26rem;
+  height: auto;
+  object-fit: cover;
+}
