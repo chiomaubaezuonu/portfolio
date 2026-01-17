@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Blog.module.css";
-import { blog } from "../blog/BlogData";
+import { blog } from "./BlogData";
 
 
 interface BlogCard {

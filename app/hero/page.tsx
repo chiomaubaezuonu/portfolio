@@ -1,41 +1,4 @@
-// //
-
-// import fs from "fs";
-// import path from "path";
-// import matter from "gray-matter";
-
-// export default function BlogPage() {
-//   const postsDirectory = path.join(process.cwd(), "posts");
-
-//   const fileNames = fs.readdirSync(postsDirectory);
-
-//   const posts = fileNames.map((fileName) => {
-//     const filePath = path.join(postsDirectory, fileName);
-//     const fileContent = fs.readFileSync(filePath, "utf-8");
-
-//     const { data } = matter(fileContent);
-
-//     return {
-//       title: data.title,
-//       slug: fileName.replace(".md", ""),
-//     };
-//   });
-
-//   return (
-//     <div style={{ padding: "40px" }}>
-//       <h1>Blog</h1>
-
-//       <ul>
-//         {posts.map((post) => (
-//           <li key={post.slug}>{post.title}</li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
-
 import Link from "next/link";
-// import {blog} from "../blog/BlogData"
 import Header from "../components/header/Header";
 import styles from "../hero/Hero.module.css";
 import Blog from "../blog/page";
