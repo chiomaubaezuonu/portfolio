@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "../components/header/Header";
 import styles from "../hero/Hero.module.css";
-import Blog from "../blog/page";
+import Blog from "../blogs/page";
 
 const Hero = () => {
   return (
