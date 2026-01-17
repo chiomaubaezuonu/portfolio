@@ -1,1 +1,85 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #242424;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+@media (max-width: 1180px) {
+  html {
+    font-size: 92%;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 84%;
+  }
+}
+
+@media (max-width: 980px) {
+  html {
+    font-size: 76%;
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    font-size: 68%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 115%;
+  }
+}
+
+@media (min-width: 2500px) {
+  html {
+    font-size: 140%;
+  }
+}
+
+
+svg {
+  fill: currentColor;
+} */
+/* html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  } */

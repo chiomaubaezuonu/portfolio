@@ -24,7 +24,7 @@ const About = () => {
           landscape and arm ourselves with the knowledge to navigate it safely.
         </p>
         <Link href="/" className={styles.button_link}>
-          <Button
+          <Button className={styles.about_btn}
             text="Get in touch"
             type="about_btn"
             image="/images/arrow-right-white.svg"
@@ -32,7 +32,7 @@ const About = () => {
         </Link>
       </div>
      
-        <img src="/images/about-potrait.png" className={styles.potrait} alt="joshua" />
+        <img src="/images/portrait1.jpeg" className={styles.potrait} alt="joshua" />
       
     </div>
   );

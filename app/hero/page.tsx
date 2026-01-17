@@ -1,5 +1,4 @@
-// // 
-
+// //
 
 // import fs from "fs";
 // import path from "path";
@@ -35,12 +34,11 @@
 //   );
 // }
 
-
-
 import Link from "next/link";
-import Blog from "../Blog/page";
+// import {blog} from "../blog/BlogData"
 import Header from "../components/header/Header";
 import styles from "../hero/Hero.module.css";
+import Blog from "../blog/page";
 
 const Hero = () => {
   return (
@@ -65,12 +63,19 @@ const Hero = () => {
           </div>
           <div>
             <img
-              src="/images/joshua-amali.png"
-              className={styles.josh}
+              src="/images/portraitMain.png"
+              className={styles.oma}
               alt="Joshua"
             />
           </div>
         </div>
+      </div>
+      <div>
+        <img
+          src="/images/portraitMain.png"
+          className={styles.omaMobile}
+          alt="Joshua"
+        />
       </div>
       <Blog />
     </div>

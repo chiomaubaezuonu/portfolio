@@ -7,22 +7,21 @@
   padding-right: 3rem;
   position: relative;
   height: 50vw;
-  background-size: 100vw 50vw;
+  /* background-size: 100vw 50vw; */
 }
 .overlay {
   width: 100%;
   color: white;
   display: flex;
   gap: 4rem;
-  position: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem 0 6rem;
+  padding: 0 3rem 0 3rem;
   padding-bottom: 0;
   height: 100%;
-  top: 0;
+  top: 2rem;
   left: 0;
-
 }
 .bio {
   display: flex;
@@ -30,13 +29,14 @@
   gap: 2rem;
   align-items: flex-start;
   font-size: 1.3rem;
+  width: 100%;
 }
 .title {
   font-weight: 500;
   font-size: 3rem;
 }
 .btn {
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 2.4rem;
   border: 0.01rem solid white;
   background-color: transparent;
@@ -45,11 +45,62 @@
   outline: none;
   color: white;
 }
-.btn,
-.btn:visited {
-}
-.josh {
-  width: 28rem;
+
+.oma {
+  width: 100%;
+  height: 50vh;
   object-fit: cover;
   border-radius: 1rem;
+}
+.omaMobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-image: url("/images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    /* height: 100vh; */
+    /* background-size: 250vw 100vh; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100vh;
+    min-height: 0;
+    /* background-color: pink; */
+  }
+  .overlay {
+    top: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    /* top: 14rem; */
+    height: 100%;
+  }
+  .bio {
+    width: 100%;
+    height: auto;
+    margin-top: 6.9rem;
+  }
+  .title {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .bio p {
+    font-size: 1.105rem;
+  }
+  .btn {
+    padding: 0.6rem 1.6rem;
+    font-size: 1.105rem;
+  }
+  .oma {
+    display: none;
+  }
+  .omaMobile {
+    display: block;
+  }
 }

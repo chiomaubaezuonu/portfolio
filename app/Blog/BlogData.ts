@@ -1,11 +1,14 @@
 export const blog = [
   {
-    image: "/images/blog-img-1.png",
-    title: "The Symbiotic Relationship Between Blockchain and Cybersecurity",
+    slug: "migrating-react-to-nextjs",
+    image: "/images/blog-img1.png",
+    title:
+      "Migrating a real project from React to Next.js: What Actually Broke and Why",
     text: "In an era where data breaches and cyberattacks dominate headlines, the intersection of blockchain technology and cybersecurity has emerged as a beacon of hope. As organizations scramble to fortify their defenses, understanding how these two realms interact can illuminate a path forward, blending innovation with security.",
     link: "Read More",
   },
   {
+    slug: "security-vulnerabilities-of-cryptocurrency-wallets",
     image: "/images/blog-img-2.png",
     title:
       "The Security Vulnerabilities of Cryptocurrency Wallets: A Critical Examination",
