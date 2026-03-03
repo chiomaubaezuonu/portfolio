@@ -12,10 +12,12 @@
   gap: 2rem;
   align-items: flex-start;
   font-size: 1.3rem;
+  width: 60%;
 }
 .title {
   font-weight: 500;
   font-size: 3rem;
+  line-height: 3.8rem;
 }
 .button_link {
   text-decoration: none;
@@ -39,15 +41,17 @@
   }
   .bio {
     padding: 2rem;
+    width: 100%;
   }
   .title {
     font-size: 2.1rem;
     line-height: 3rem;
+    width: 100%;
   }
   .bio p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
-  .about_btn{
+  .about_btn {
     padding: 0.5rem 1.2rem;
     font-size: 1rem;
   }

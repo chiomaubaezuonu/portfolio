@@ -1,7 +1,6 @@
 import Link from "next/link";
-import styles from "./Blog.module.css";
+import styles from "../blogs/Blog.module.css";
 import { blog } from "./BlogData";
-
 
 interface BlogCard {
   image: string;
@@ -19,25 +18,26 @@ const Blog = () => {
         </h2>
         <span className={styles.subtitle}>
           My little corner of the web where I share my thoughts on topics around
-          cybersecurity and blockchain.
+          web development.
         </span>
       </div>
       <div className={styles.cardContainer}>
         {blog.map((blog) => {
           return (
-            <div key={blog.slug} className={styles.card}>
+           <Link key={blog.slug} href={`/blogs/${blog.slug}`} >
+            <div className={styles.card}>
               <img src={blog.image} className={styles.blogImg} alt="" />
               <div className={styles.blogDetails}>
                 <h3 className={styles.blogTitle}>{blog.title}</h3>
-                <p className={styles.text}>{blog.text}</p>
+                <p className={styles.text}>{blog.excerpt}</p>
                 <div className={styles.linkWrapper}>
-                  <Link href={`/blog/${blog.slug}`} className={styles.linkText}>
-                    {blog.link}
-                  </Link>
+                  <p className={styles.linkText}>{blog.link}</p>
+
                   <img src="/images/arrow-right.svg" alt="arrow-right" />
                 </div>
               </div>
             </div>
+            </Link>
           );
         })}
       </div>

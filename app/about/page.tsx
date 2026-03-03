@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Button from "../components/button/Button";
 import styles from "./About.module.css";
+import Image from "next/image";
 const About = () => {
   return (
     <div className={styles.about_container}>
@@ -10,30 +11,30 @@ const About = () => {
           <span style={{ opacity: "0.7" }}> based in Uyo, Nigeria.</span>
         </h1>
         <p>
-          Welcome to my cybersecurity blog! I'm Joshua Amali, and in this blog
-          we will be diving into the intriguing intersection of blockchain
-          technology and cybersecurity vulnerabilities. While blockchain is
-          often hailed for its robust security features and potential to
-          revolutionize various industries, it's crucial to recognize that it's
-          not impervious to threats. My motivation behind creating this blog is
-          because I personally have been a victim of cybercrime where a bad
-          actor has stolen various amounts of money from my 'secure' wallets. We
-          will explore the various vulnerabilities that can compromise
-          blockchain systems and discuss strategies to safeguard against them.
-          Join me as we uncover the complexities of this rapidly evolving
-          landscape and arm ourselves with the knowledge to navigate it safely.
+          I&apos;m a software engineer who enjoys building thoughtful, scalable
+          web applications. I care about clean structure, performance, and
+          writing code that is easy to understand and maintain. I learn by
+          building, breaking things and refining my approach, and this portfolio
+          is a reflection of that journey.
         </p>
+
         <Link href="/" className={styles.button_link}>
-          <Button className={styles.about_btn}
+          <Button
+            className={styles.about_btn}
             text="Get in touch"
             type="about_btn"
             image="/images/arrow-right-white.svg"
           />
         </Link>
       </div>
-     
-        <img src="/images/portrait1.jpeg" className={styles.potrait} alt="joshua" />
-      
+
+      <Image
+        width={80}
+        height={80}
+        src="/images/portrait1.jpeg"
+        className={styles.potrait}
+        alt="joshua"
+      />
     </div>
   );
 };

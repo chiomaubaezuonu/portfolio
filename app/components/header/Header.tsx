@@ -4,15 +4,30 @@ import Button from "../button/Button";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const pathName = usePathname();
   const [isNavListOpen, setIsNavListOpen] = useState(false);
 
+  // const headerBgColor = {
+  //   backgroundColor: "bg-[#7d7d7d]",
+  // };
+
   return (
     <div style={{ position: "relative" }}>
-      <header className={styles.header}>
-        <img src="/images/my-logo.svg" className={styles.logo} alt="logo" />
+      <header
+        className={
+          pathName !== "/projects" ? styles.header : styles.headerProjects
+        }
+      >
+        <Image
+          width={120}
+          height={120}
+          src="/images/logo3.png"
+          className={styles.logo}
+          alt="logo"
+        />
 
         <div className={styles.navList}>
           <Link
@@ -34,9 +49,7 @@ const Header = () => {
           <Link
             href="/projects"
             className={
-              pathName === "/projects"
-                ? styles.activeLink
-                : styles.inactiveLink
+              pathName === "/projects" ? styles.activeLink : styles.inactiveLink
             }
           >
             Projects
@@ -46,11 +59,13 @@ const Header = () => {
 
         <div className={styles.headerSocials}>
           <img className={styles.linkedin} src="/images/linkedin.svg" alt="" />
-          <Button
-            type="primary_btn"
-            text="Get in touch"
-            className={styles.primary_btn}
-          />
+          <Link href="mailto:chiomaubaezuonu102@gmail.com">
+            <Button
+              type="primary_btn"
+              text="Get in touch"
+              className={styles.primary_btn}
+            />
+          </Link>
         </div>
         <div className={styles.mobile}>
           {!isNavListOpen && (
@@ -83,7 +98,9 @@ const Header = () => {
                   <Link
                     href="/about"
                     className={
-                      pathName === "/about" ? styles.activeLink : styles.inactiveLink
+                      pathName === "/about"
+                        ? styles.activeLink
+                        : styles.inactiveLink
                     }
                   >
                     About

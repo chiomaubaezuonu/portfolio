@@ -2,11 +2,11 @@
   background-color: black;
   color: white;
   border-radius: 2rem;
-  padding: 0.25rem 0.8rem; 
+  padding: 0.665rem 1.52rem; 
   cursor: pointer;
-  border: 0.1rem solid black;
   transition: 0.3s ease-in-out;
   text-align: center;
+  outline: none;
 }
 
 .about_btn {
@@ -24,6 +24,18 @@
   transition: 0.3s ease-in-out;
   font-size: inherit;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.primary_btn:hover{
+  background-color: transparent;
+  border: 0.05rem solid black;
+  color: black;
+}
+.about_btn:hover{
+   background-color: transparent;
+  border: 0.05rem solid black;
+  color: black;
 }
 
 
